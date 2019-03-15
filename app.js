@@ -1,7 +1,9 @@
 const burgerMenu = document.querySelector(".burger-menu");
+const navMenu = document.querySelector("nav");
 
 burgerMenu.addEventListener("click", function(){
     burgerMenu.classList.toggle("open");
+    navMenu.classList.toggle("open");
 });
 
 const heroName = document.querySelector(".hero-name");
