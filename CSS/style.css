@@ -8,7 +8,6 @@
 
 html {
     font-size: 10px;
-    background: #090a0f;
 }
 
 a {
@@ -148,10 +147,6 @@ main {
     transition-delay: 1.5s;
 }
 
-.about {
-    height: 100vh;
-}
-
   .arrow.bounce i {
     color: white;
     opacity: 0.5;
@@ -205,3 +200,8 @@ main {
               transform: translateY(-15px);
     }
   }
+
+  .about {
+    height: 100vh;
+    background: #090a0f;
+}
