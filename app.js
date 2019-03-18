@@ -26,3 +26,46 @@ for (let i = 0; i < projContainers.length; i++){
         }
     });
 }
+
+//Fade in on scroll
+function debounce(func, wait = 20, immediate = true) {
+    let timeout;
+    return function() {
+        let context = this, args = arguments;
+        let later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        let callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+};
+
+const aboutSection = document.querySelector(".about");
+const fadeElems = document.querySelectorAll(".fade");
+
+let isInViewport = function (elem) {
+    let bounding = elem.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+};
+
+let checkSlide = function(e) {
+    if(isInViewport(aboutSection)){
+        fadeElems.forEach(function(elem){
+            elem.classList.add('fadein');
+        });
+    } else {
+        fadeElems.forEach(function(elem){
+            elem.classList.remove('fadein');
+        });
+    }
+};
+
+window.addEventListener("scroll", debounce(checkSlide, 50));
