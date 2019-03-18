@@ -10,8 +10,9 @@ html {
     font-size: 10px;
 }
 
-a {
+a, a:visited, a:link, a:hover {
   text-decoration: none;
+  color: white;
 }
 
 body {
@@ -200,8 +201,3 @@ main {
               transform: translateY(-15px);
     }
   }
-
-  .about {
-    height: 100vh;
-    background: #090a0f;
-}

@@ -7,11 +7,11 @@
     <title>Artie Negron</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/projects.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/burger.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/stars.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:200,300,400|Ubuntu|Merriweather|Lato:200,300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -39,23 +39,85 @@
     </header>
 
     <main>
-        <div class="hero">
-            <div id="stars"></div>
-            <div id="stars2"></div>
-            <div id="stars3"></div>
-            <div class="hero-content">
-                <div class="hero-intro">
-                <h1 class="hero-name">Artie Negron</h1>
-                <p class="hero-blurb">Software Developer</p>
-                </div>
-                <div class="arrow bounce">
-                    <i class="fas fa-arrow-down fa-3x"></i>
+        
+            <section class="hero">
+                    <div id="stars"></div>
+                    <div id="stars2"></div>
+                    <div id="stars3"></div>
+                    <div class="hero-content">
+                        <div class="hero-intro">
+                        <h1 class="hero-name">Artie Negron</h1>
+                        <p class="hero-blurb">Software Developer</p>
+                        </div>
+                        <div class="arrow bounce">
+                            <i class="fas fa-arrow-down fa-3x"></i>
+                        </div>
+                    </div>
+                </section>
+                
+        <section class="projects">
+            <div class="project-container">
+                <div class="project-track">
+                    <div class="project-details">
+                        <span class="project-num">01</span>
+                        <span class="project-title">Portfolio</span>
+                    </div>
+                    <div class="project-blurb">
+                            <div class="project-stack">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js-square"></i>
+                            </div>
+                        <p>A static webpage (you're looking at it!) built with HTML5, CSS3, and JavaScript. Utilizes CSS Grid and Flexbox to build a responsive layout, and vanilla JavaScript to control how CSS animations are served to the viewer.</p>
+                        <a class="git-link" href="#">
+                            <span>View Repo</span><i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="about">
-
-        </div>
+            <div class="project-container">
+                <div class="project-track">
+                    <div class="project-details">
+                        <span class="project-num">02</span>
+                        <span class="project-title">Review Site</span>
+                    </div>
+                    <div class="project-blurb">
+                            <p>An ASP.NET web application that allows users to review online courses. Utilizes an MVC design pattern, the Entity Framework to connect to a database, and ASP.NET Razor to display dynamic webpages.</p>
+                            <a class="git-link" href="#">
+                                    <span>View Repo</span><i class="fas fa-arrow-right"></i>
+                                </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-track">
+                    <div class="project-details">
+                        <span class="project-num">03</span>
+                        <span class="project-title">Project</span>
+                    </div>
+                    <div class="project-blurb">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <a class="git-link" href="#">
+                                    <span>View Repo</span><i class="fas fa-arrow-right"></i>
+                                </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-track">
+                    <div class="project-details">
+                        <span class="project-num">04</span>
+                        <span class="project-title">Project</span>
+                    </div>
+                    <div class="project-blurb">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <a class="git-link" href="#">
+                                    <span>View Repo</span><i class="fas fa-arrow-right"></i>
+                                </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script type="text/javascript" src="app.js"></script>
